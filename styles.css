@@ -18,6 +18,10 @@ body
   display: flex;
   align-items: center;
 }
+.gifContent{
+  display: flex;
+  align-items: top;
+}
 .imgur-embed-pub {
   border: none !important; /* Important to override any inline styles */
   padding: 0; /* Remove any padding if needed */
