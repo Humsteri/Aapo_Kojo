@@ -1,88 +1,74 @@
-html
-{
-  font-size: 22px
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
-body
-{
-  background-color: #311D3F;
-  color: whitesmoke;
+.container {
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;     /* Centers content vertically */
 }
-.Start{
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  text-align: left;
-  padding: 8px;
+header {
+    background-color: #222;
+    justify-content: center;
+    padding: 10px 20px;
 }
+
+header h1 {
+    color: #fff;
+    font-size: 24px;
+    display: inline;
+}
+
+nav {
+    margin-top: 10px;
+    float: right;
+}
+
+nav a {
+    color: #ff8800;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+/* Default link color */
+.content h2 a {
+    color: #ff8800; /* Orange color for the link */
+    text-decoration: none; /* Removes underline by default */
+}
+
+/* Hover color for link */
+.content h2 a:hover {
+    color: #192e75; /* Change to green on hover */
+    text-decoration: underline; /* Add underline on hover if needed */
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
 .content {
-  display: flex;
-  align-items: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
 }
-.gifContent{
-  display: flex;
-  align-items: top;
-}
-.imgur-embed-pub {
-  border: none !important; /* Important to override any inline styles */
-  padding: 0; /* Remove any padding if needed */
-}
+
 .content img {
-  margin-right: 20px; /* Space between the image and the text */
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
-.content .text {
-  max-width: 500px; /* Adjust the width of the text area */
+.content h2 {
+    color: #ff8800;
+}
 
-}
-.linkText a{
-  max-width: 500px; /* Adjust the width of the text area */
-  color: rgb(152, 55, 177);
-  text-decoration: none;
-}
-.linkText a:hover {
-  color: red;
-}
-.center_div a{
-  max-width: 500px; /* Adjust the width of the text area */
-  color: blue;
-  text-decoration: none;
-}
-.center_div a:hover {
-  color: red;
-}
-.center_div {
-font-family: "Comic Neue", cursive;
-  border: 1px solid gray;
-  margin: 10px auto;
-  width: 90%;
-  background-color: #88304E;
-  text-align: left;
-  padding: 8px;
-}
-.center_div2 a{
-  max-width: 500px; /* Adjust the width of the text area */
-  color: blue;
-  text-decoration: none;
-}
-.center_div2 a:hover {
-  color: red;
-}
-.center_div2 {
-font-family: "Comic Neue", cursive;
-  border: 1px solid gray;
-  margin: 10px auto;
-  width: 90%;
-  background-color: #522546;
-  text-align: left;
-  padding: 8px;
-}
-.div-2{
-  background-color: #ca5555;
-  font-family: "Comic Neue", cursive;
-  border: 1px solid gray;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  text-align: left;
-  padding: 8px;
+footer {
+    background-color: #222;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }

@@ -1,0 +1,88 @@
+html
+{
+  font-size: 22px
+}
+body
+{
+  background-color: #000000;
+  color: rgb(8, 87, 5)
+}
+.Start{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: left;
+  padding: 8px;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.gifContent{
+  display: flex;
+  align-items: top;
+}
+.imgur-embed-pub {
+  border: none !important; /* Important to override any inline styles */
+  padding: 0; /* Remove any padding if needed */
+}
+.content img {
+  margin-right: 20px; /* Space between the image and the text */
+}
+
+.content .text {
+  max-width: 500px; /* Adjust the width of the text area */
+ 
+}
+.linkText a{
+  max-width: 500px; /* Adjust the width of the text area */
+  color: rgb(152, 55, 177);
+  text-decoration: none;
+}
+.linkText a:hover {
+  color: red;
+}
+.center_div a{
+  max-width: 500px; /* Adjust the width of the text area */
+  color: blue;
+  text-decoration: none;
+}
+.center_div a:hover {
+  color: red;
+}
+.center_div {
+font-family: "Comic Neue", cursive;
+  border: 1px solid gray;
+  margin: 10px auto;
+  width: 90%;
+  background-color: #000000;
+  text-align: left;
+  padding: 8px;
+}
+.center_div2 a{
+  max-width: 500px; /* Adjust the width of the text area */
+  color: blue;
+  text-decoration: none;
+}
+.center_div2 a:hover {
+  color: red;
+}
+.center_div2 {
+font-family: "Comic Neue", cursive;
+  border: 1px solid gray;
+  margin: 10px auto;
+  width: 90%;
+  background-color: #ffffff;
+  text-align: left;
+  padding: 8px;
+}
+.div-2{
+  background-color: #ffffff;
+  font-family: "Comic Neue", cursive;
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: left;
+  padding: 8px;
+}
