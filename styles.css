@@ -5,16 +5,27 @@ body {
     margin: 0;
     padding: 0;
 }
+body a {
+    color: #16148a;
+}
 .container {
-    justify-content: center; /* Centers content horizontally */
-    align-items: center;     /* Centers content vertically */
+    display: flex;               /* Enables flexbox layout */
+    justify-content: center;      /* Centers content horizontally */
+    align-items: center;          /* Centers content vertically */
+    flex-direction: column;       /* Ensures header and nav are stacked */
 }
 header {
-    background-color: #222;
+    background-color: #222; /*222*/
     justify-content: center;
-    padding: 10px 20px;
+    text-align: center;    
+    padding: 10px 20px;          /* Centers the header content */
 }
-
+.headerBox {
+    background-color: #444; /*222*/
+    justify-content: center;
+    text-align: center;    
+    padding: 1px 0px;          /* Centers the header content */
+}
 header h1 {
     color: #fff;
     font-size: 24px;
@@ -22,8 +33,9 @@ header h1 {
 }
 
 nav {
-    margin-top: 10px;
-    float: right;
+    margin-top: 15px;
+    display: flex;                /* Enables flexbox layout in the nav */
+    justify-content: center;
 }
 
 nav a {
