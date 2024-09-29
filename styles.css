@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #333;
@@ -5,151 +6,190 @@ body {
     margin: 0;
     padding: 0;
 }
+
 body a {
     color: #16148a;
 }
+
+/* Container for centering elements horizontally and vertically */
 .container {
-    display: flex;               /* Enables flexbox layout */
-    justify-content: center;      /* Centers content horizontally */
-    align-items: center;          /* Centers content vertically */
-    flex-direction: column;       /* Ensures header and nav are stacked */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+/* Header styles */
 header {
-    background-color: #222; /*222*/
-    justify-content: center;
-    text-align: center;    
-    padding: 10px 20px;          /* Centers the header content */
+    background-color: #222;
+    text-align: center;
+    padding: 1rem;  /* Use rem for better scalability */
 }
+
 .headerBox {
-    background-color: #444; /*222*/
-    justify-content: center;
-    text-align: center;    
-    padding: 1px 0px;          /* Centers the header content */
+    background-color: #444;
+    text-align: center;
+    padding: 0.5rem 0;
 }
+
 header h1 {
     color: #fff;
-    font-size: 24px;
+    font-size: 1.5rem; /* Use rem units for scalable typography */
     display: inline;
 }
 
+/* Navigation Styles */
 nav {
-    margin-top: 15px;
-    display: flex;                /* Enables flexbox layout in the nav */
+    margin-top: 1rem;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 nav a {
     color: #ff8800;
     text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-}
-/* Default link color */
-.content h2 a {
-    color: #ff8800; /* Orange color for the link */
-    text-decoration: none; /* Removes underline by default */
+    margin: 0 1.25rem; /* Use rem for margin */
+    font-size: 1.125rem; /* Use rem for scalable fonts */
 }
 
-/* Hover color for link */
-.content h2 a:hover {
-    color: #192e75; /* Change to green on hover */
-    text-decoration: underline; /* Add underline on hover if needed */
-}
 nav a:hover {
     text-decoration: underline;
 }
 
+/* Content Section */
 .content {
-    max-width: 1000px;
-    margin: 20px auto;
+    max-width: 90%;  /* Improve scaling for smaller screens */
+    margin: 1.25rem auto;
     background-color: #444;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 1.25rem;
+    border-radius: 0.5rem;
 }
 
 .content img {
     max-width: 100%;
     height: auto;
-    margin: 20px 0;
+    margin: 1.25rem 0;
 }
 
 .content h2 {
     color: #ff8800;
 }
 
-footer {
-    background-color: #222;
-    color: #888;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+.content h2 a {
+    color: #ff8800;
+    text-decoration: none;
 }
+
+.content h2 a:hover {
+    color: #192e75;
+    text-decoration: underline;
+}
+
+/* Project Container Styles */
 .project-container {
     background-color: #444;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
     color: #fff;
-    max-width: 900px;
+    max-width: 100%; /* Adjust to 100% width for better responsiveness */
     margin: 0 auto;
 }
 
-/* Styling for the project title */
 .project-container h2 {
     font-size: 2rem;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     color: #77f5f8;
 }
 
-/* Info boxes container */
+/* Info Boxes Container */
 .info-boxes {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
-/* Info box styling */
+/* Info Box Styling */
 .info-box {
     background-color: #444;
-    padding: 20px;
-    border-radius: 10px;
-    width: 40%; /* Adjust width */
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    width: 48%; /* Use percentage instead of fixed width */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 .info-box img {
-    width: 100%; /* Makes the image take the full width of the box */
-    height: auto; /* Maintains aspect ratio */
-    object-fit: cover; /* Ensures the image covers the box without distorting */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
-/* Info box headings */
+
+/* Info Box Headings */
 .info-box h3 {
     font-size: 1.2rem;
     color: #fff;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #77f5f8;
-    padding-bottom: 10px;
+    margin-bottom: 0.625rem;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 0.625rem;
 }
 
-/* Paragraph and list styling inside the info box */
-.info-box p, .info-box ul {
+/* Paragraph and List Styling inside Info Box */
+.info-box p,
+.info-box ul {
     font-size: 1rem;
-    color: #ffffff;
+    color: #fff;
     line-height: 1.5;
 }
 
-/* List items inside Project Info box */
 .info-box ul {
     list-style-type: none;
     padding-left: 0;
 }
 
 .info-box ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
-/* Responsive adjustments */
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #888;
+    text-align: center;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .info-box {
-        width: 100%; /* Stack boxes on small screens */
+        width: 80%; /* Stack info boxes on smaller screens */
+    }
+    nav {
+        flex-direction: column; /* Stack nav links vertically on mobile */
+    }
+    nav a {
+        margin: 0.5rem 0;
+    }
+    .content {
+        padding: 1rem;
+        max-width: 100%; /* Ensure content uses full width on mobile */
+    }
+    .embed-container {
+        position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* Adjust this value based on the aspect ratio of the game preview */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%; /* Prevents it from exceeding the parent container */
+    }
+    
+    .embed-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0; /* Removes iframe border */
     }
 }
