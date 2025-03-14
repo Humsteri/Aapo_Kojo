@@ -159,7 +159,44 @@ footer {
     padding: 1.25rem;
     margin-top: 1.25rem;
 }
-
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #7c7979;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #2b3e92;
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  /* Style the collapsible content. Note: hidden by default */
+.collapsibleContent {
+    padding: 0 18px;
+    background-color: rgb(70, 70, 70);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .info-box {
